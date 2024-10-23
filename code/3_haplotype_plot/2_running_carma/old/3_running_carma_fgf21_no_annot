@@ -1,0 +1,4 @@
+module load gcc/11.2.0
+module load R/4.3.1
+
+Rscript /projects/kilpelainen-AUDIT/data/tools/fine_mapping_carma/code/run_fine_mapping_carma_1K.R /projects/ukbiobank-AUDIT/people/zlc436/stina_collab/code/2_fine_mapping/2_running_carma/3_carma_fgf21_no_annot.cfg
