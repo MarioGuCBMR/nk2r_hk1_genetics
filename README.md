@@ -14,6 +14,10 @@ We performed fine-mapping of HbA1c associations in 10:70929740-71367422 locus wi
 
 Finally, we utilized Open Target Genetics (OTG) [8] to query the variant-to-gene (V2G) scores utilized for gene prioritization and the associations of causal variants with expression quantitative trait loci (eQTLs). 
 
+## In-house code for LD-clumping and CARMA fine-mapping
+
+LD-clumping with plink1.9 and fine-mapping with CARMA were performed in our centre's cluster in a pipeline that allows running both analysis for many regions separately using sbatch queueing system. If you'd like to reproduce our analysis, please contact Mario Garcia Urena at mario.garcia.urena@sund.ku.dk. He will provide you with the base code that you can apply to your own server and queueing system. 
+
 ## Dependencies:
 
 All analyses were performed in Rstudio (2022.07.2+576) with R (4.1.3). Data were loaded and manipulated using data.table (1.14.2) and tidyverse (1.3.1). Linkage disequilibrium (LD) operations were performed using plink1.9 [4], ggLD [9] and LDLink [10]. 
