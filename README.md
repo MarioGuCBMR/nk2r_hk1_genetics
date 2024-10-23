@@ -1,8 +1,6 @@
 # NK2R-HK1 genetics
 
-A repository for the genetic analysis performed for NK2R and HK1.
-
-ADD FIGURE here.
+A repository for the genetic analysis performed for HK1-NK2R-TSPAN15 locus in the paper: "NK2R control of energy expenditure and feeding to treat metabolic diseases"
 
 ## Source of data:
 
