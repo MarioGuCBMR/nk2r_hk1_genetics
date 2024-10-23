@@ -1,0 +1,9 @@
+#! /bin/bash
+#$ -S /bin/bash
+#SBATCH -J 'q2_hba1c'
+#SBATCH -D  /projects/kilpelainen-AUDIT/people/zlc436/answer_reviewer_5/output/2_haplotype_plot/2_clumped_data/clumped_data/qsub_files
+module load plink/1.9.0
+variable=$'_1000G_phase_3_v5_EUR_maf'
+for i in {1..22}; do
+plink --bfile /projects/kilpelainen-AUDIT/people/zlc436/zlc436/1000G_Phase3_v5/CURATED_DATA/PLINK_DATA/chr$i/chr${i}${variable} --clump  /projects/kilpelainen-AUDIT/data/tools/ld_clump_1KG/temporal_folder/hba1c/matched_data/updated_snps.txt  --clump-p1  5e-08  --clump-p2  1  --clump-kb  1000  --clump-r2  0.1  --out  /projects/kilpelainen-AUDIT/data/tools/ld_clump_1KG/temporal_folder/hba1c/clumped_data/independent_chr$i
+done
